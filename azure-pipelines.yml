@@ -1,0 +1,11 @@
+trigger:
+  - main  # Change this to match your default branch
+
+pool:
+  Self agent
+
+steps:
+  - checkout: self  # Checkout the code
+  - script: echo "Building the project..."
+  - script: echo "Running tests..."
+  - script: echo "Deploying..."
